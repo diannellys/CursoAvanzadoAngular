@@ -1,31 +1,54 @@
-<!--app-header:  tiene la barra superior de menu-->
-<app-sidebar></app-sidebar>
-<app-header></app-header>
+<!-- ============================================================== -->
+<!-- Main wrapper - style you can find in pages.scss -->
+<!-- ============================================================== -->
+<div id="main-wrapper">
 
-<!--area de pagina web-->
+    <app-header></app-header>
 
-<div class="page-wrapper">
-<app-breadcrumbs></app-breadcrumbs>
- <router-outlet></router-outlet>
+    <app-sidebar></app-sidebar>
 
-<!-- <div id="page-wrapper">
+    <!-- ============================================================== -->
+    <!-- Page wrapper  -->
+    <!-- ============================================================== -->
+    <div class="page-wrapper">
 
-    <div class="container-fluid">
-     <app-breadcrumbs></app-breadcrumbs>
-     <div class="row">
-        <div class="col-12">
-            <div class="card">
-                <div class="card-body">
-                    This is some text within a card block.
-                </div>
-            </div>
+        <!-- ============================================================== -->
+        <!-- Container fluid  -->
+        <!-- ============================================================== -->
+        <div class="container-fluid">
+
+            <app-breadcrumbs></app-breadcrumbs>
+
+            <!-- ============================================================== -->
+            <!-- Start Page Content -->
+            <!-- ============================================================== -->
+
+            <router-outlet></router-outlet>
+
+            <!-- 
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-body">
+                                This is some text within a card block.
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            -->
+            <!-- ============================================================== -->
+            <!-- End Page Content -->
+            <!-- ============================================================== -->
+
         </div>
+        <!-- ============================================================== -->
+        <!-- Container fluid  -->
+        <!-- ============================================================== -->
+
+
     </div>
-
-
-
-    </div>
-</div>
- -->
+    <!-- ============================================================== -->
+    <!-- END Page wrapper  -->
+    <!-- ============================================================== -->
 
 </div>

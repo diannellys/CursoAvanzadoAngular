@@ -1,5 +1,4 @@
-import { FormsModule } from '@angular/forms';
-import { Component, OnInit, Input, Output } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-progress',
@@ -7,18 +6,15 @@ import { Component, OnInit, Input, Output } from '@angular/core';
   styles: []
 })
 export class ProgressComponent implements OnInit {
- progreso1: number = 80;
-  progreso2: number = 90;
 
-  constructor()
-  {
+  progreso1: number = 20;
+  progreso2: number = 30;
 
-
-  }
-
-
+  constructor() { }
 
   ngOnInit() {
   }
+
+
 
 }
