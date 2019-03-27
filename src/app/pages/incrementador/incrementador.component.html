@@ -1,0 +1,43 @@
+
+
+
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-body">
+
+                    <h5 class="card-title">Barra de progreso</h5>
+                    <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning"
+                            role="progressbar" [attr.aria-valuenow]="progreso" aria-valuemin="0" aria-valuemax="100" [style.width]="progreso+'%'">
+                            </div>
+                      </div>
+                </div>
+            </div>
+    </div>
+
+
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Leyenda</h5>
+
+                <div class="progress">
+
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Ingrese progreso" aria-label="Progreso" aria-describedby="button-addon4" name="progreso" [(ngModel)]="progreso">
+
+
+                        <div class="input-group-append" id="button-addon4">
+                          <button class="btn btn-outline-primary" type="button" (click)="incrementar(+5)"><i class="mdi mdi-thumb-up-outline"></i></button>
+
+
+                          <button class="btn btn-outline-danger" type="button" (click)="incrementar(-5)"><i class="mdi mdi-thumb-down-outline"></i></button>
+                        </div>
+                      </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
